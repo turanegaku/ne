@@ -6,11 +6,28 @@
   <title>NE</title>
   <style type="text/css">
     .db {text-align:center;}
-    button {width:80%; font-size:64px; color:white; background-color:red; font-weight:bold;}
+    button {
+        width:80%; padding:50px;
+        font-size:64px; font-weight:bold;
+        color:white; background-color:red;
+        border-bottom: solid 8px #957262;
+        border-radius: 3px;
+    }
+    button:active {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+        box-shadow:0px 0px 1px rgba(0, 0, 0, 0.2);
+        border-bottom: none;
+    }
   </style>
 </head>
 <body>
   <div class="db">
+  <a href=https://www.openrec.tv/user/kabano>
+      <img src=https://hayabusa.io/openrec-image/user/8371261/837126028.q95.w164.ttl604800.headercache0.v1604751398.png?format=png>
+      <p>openrec</p>
+  </a>
+  <br>
   <button onclick="play()" id="play">NE!</button>
   </div>
   <script language="javascript" type="text/javascript">
