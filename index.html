@@ -3,23 +3,26 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>sample</title>
+  <title>NE</title>
+  <style type="text/css">
+    .db {text-align:center;}
+    button {width:80%; font-size:64px; color:white; background-color:red; font-weight:bold;}
+  </style>
 </head>
 <body>
-  <button onclick="play()" id="play">再生</button>
+  <div class="db">
+  <button onclick="play()" id="play">NE!</button>
+  </div>
   <script language="javascript" type="text/javascript">
   var music = new Audio();
   function init() {
     music.preload = "auto";
     music.src = "./ne.wav";
     music.load();
-
-    music.addEventListener("ended", function () {
-      music.currentTime = 0;
-    }, false);
   }
 
   function play() {
+    music.currentTime = 0;
     music.play();
   }
 
